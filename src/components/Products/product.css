@@ -1,0 +1,216 @@
+.Product {
+    margin: 10rem 10rem;
+    margin-top: 25rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 0;
+    padding-bottom: 10rem;
+}
+
+.left {
+    position: relative;
+}
+
+#data-div {
+    /* background: rgb(228, 190, 190); */
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+
+.visual {
+    border: 0.1rem solid #AEAEAE;
+    border-radius:50%;
+    width: 22rem;
+    height: 22rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.visual img {
+    width: 6.5rem;
+}
+
+.line-div {
+    width:0;
+    height: 25rem;
+    margin: auto;
+}
+
+.line-div img {
+    max-height: 100%;
+}
+
+.right {
+    padding: 0 3rem;
+}
+
+.right h1 {
+    padding: 1rem 0;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.right p {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    letter-spacing: 0.05em;
+    color: black;
+}
+
+/* ------------------------------------------------------------ */
+
+.algo-div {
+    /* background: rgb(240, 241, 225); */
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+.hardware-div {
+    /* background: rgb(221, 243, 219); */
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+.income-div {
+    /* background: rgb(217, 227, 231); */
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+#income-div .line-div {
+    display: none;
+}
+
+
+
+@media screen and (max-width:980px){
+
+    .right {
+        padding-left: 3rem;
+    }
+    
+}
+
+@media screen and (max-width:960px){
+
+    .left {
+        padding-right:  3rem;
+    }
+
+    .visual {
+        width: 21rem;
+        height: 21rem;
+    }
+
+    .visual img {
+        width: 6rem;
+    }
+    
+    .line-div {
+        height: 30rem;
+    }
+}
+
+@media  screen and (max-width: 768px){
+
+    .Product {
+        margin-right: 8rem ;
+        margin-left: 8rem;
+    }
+
+    .visual {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .visual img {
+        width: 5.5rem;
+    }
+
+    .right p {
+        text-align: justify;
+    }
+    
+}
+
+@media  screen and (max-width: 650px){
+
+    .line-div {
+        height: 36rem;
+    }
+
+    .right {
+        padding-right: 0;
+    }
+
+    .visual {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .visual img {
+        width: 5rem;
+    }
+
+    
+    
+}
+
+
+@media  screen and (max-width:500px) {
+
+    .Product {
+        margin: 7rem 5rem;
+        margin-top: 19rem;
+        padding-bottom: 2rem;
+    }
+
+
+    #data-div, #algo-div, #hardware-div, #income-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12rem;
+        
+    }
+
+     .left {
+        margin:auto;
+        padding: 0;
+    }
+
+    .right {
+        padding: 4rem 4rem;
+        border: 1px solid lightgray;
+        border-radius: 0.4rem;
+    }
+
+    .right h1 {
+        text-align: center;
+    }
+
+    .right p {
+        font-size: 1.7rem;
+    }
+
+    .line-div {
+        height: 10rem;
+    }
+
+    #income-div .line-div {
+        display: block;
+    }
+
+
+}
+

@@ -1,0 +1,219 @@
+.Navbar {
+    display: flex;
+    /* background: rgb(243, 228, 228);  */
+    padding: 1.6rem 1rem;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*  ---------------------------------------- */
+/** STYLING FOR BRAND LOGO AND BRAND NAME IN THE LEFT SIDE */
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    /* background-color: rgb(232, 240, 212); */
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.nav-left ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0;
+    margin: 0;
+
+}
+
+.nav-left ul li {
+    padding: 0.3rem 0.8rem;
+}
+
+.brand-logo  img {
+    max-width: 4.5rem;
+}
+
+.brand-name h3 {
+    font-weight: 600;
+    font-size:1.7rem;
+}
+
+/*  ---------------------------------------- */
+/** STYLING FOR MENU IN THE RIGHT SIDE */
+
+.nav-right {
+    width: 70%;
+    display: flex;
+    /* background: rgb(208, 220, 236); */
+    justify-content:flex-end;
+    padding: 0 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.nav-right #menu-ul {
+    /* width:100%; */
+    display: flex;  
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-right ul li {
+    padding: 0 2.5rem;
+}
+
+.nav-right ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+}
+
+
+.nav-right .product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product > i,NavLink {
+    padding: 0 0.5rem;
+    font-weight: 400;
+}
+
+.product i {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.activeLink {
+
+    font-weight: bolder;
+}
+
+
+/*  ------------------------------------------------------------------------------- */
+
+
+@media  screen and (max-width:600px){
+
+
+    .nav-right ul li {
+        padding: 0 1.5rem;
+    }
+    
+}
+
+@media  screen and (max-width:460px){
+
+    .nav-right ul li NavLink{
+        width: 100%;
+        display:block
+
+    }
+    
+}
+
+@media  screen and (max-width:485px){
+
+
+    #small-menu-ul .actLink {
+        font-weight: 700;
+        color: rgba(11, 28, 105, 0.932);
+    }
+
+    .nav-right .product {
+        justify-content: space-between;
+    }
+
+    .nav-right #menu-ul {
+        display: none;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        transition: ease-in-out 0.3s;
+
+    }
+
+    .nav-left {
+        width: 100%;
+        
+    }
+
+
+    .nav-left .brand-logo  img {
+        max-width: 4rem;
+        margin-top: 0.3rem;
+    }
+    
+    .nav-left .brand-name h3 {
+        font-weight: 600;
+        font-size:2.2rem;
+    }
+
+
+
+    .nav-right {
+        padding: 0.3rem;
+        width: 100%;
+        /* display: none; */
+        justify-content:start;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2.5rem;
+        margin-right: 3rem;
+    }
+    
+    .nav-right .small-menu-ul {
+        width: 100%;
+        /* background-color: aqua; */
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-right-toggle {
+        display: none;
+    }
+
+    .nav-right ul li {
+        width: 12rem;
+        list-style: none;
+        margin: 0.3rem 0.5rem;
+        padding: 0.5rem 0.7rem;
+        background-color: rgba(161, 190, 245, 0.336);
+        border-radius: 0.4rem;
+    }
+
+    .nav-right li NavLink {
+        font-weight: 600;
+        color: rgb(19, 17, 17);
+        margin: 0.1rem 0.1rem;
+    }
+    .nav-right li i {
+        color: rgb(31, 29, 29);
+    }
+   
+}
